@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="tabPane" xmlns:fx="http://javafx.com/fxml"
+         xmlns="http://javafx.com/javafx"
+         fx:controller="com.example.sd3coursework.HelloController">
+  <tabs>
+    <!-- Tab for browsing items -->
+    <Tab text="Browse Items">
+      <VBox spacing="10" alignment="CENTER" styleClass="root">
+        <Label fx:id="statusLabel" text="Welcome to Zip About" styleClass="main-title" />
+        <HBox spacing="10" alignment="CENTER">
+          <ComboBox fx:id="vehicleComboBox" promptText="Select Vehicle" styleClass="combo-box" />
+          <ComboBox fx:id="equipmentComboBox" promptText="Select Equipment" styleClass="combo-box" />
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+          <Button fx:id="rentButton" text="Rent Selected Item" onAction="#handleRentAction" styleClass="button" />
+          <TextField fx:id="searchField" promptText="Search for an item" />
+          <Button fx:id="searchButton" text="Search" onAction="#handleSearchAction" styleClass="button" />
+          <Button fx:id="filterButton" text="Filter Items" onAction="#handleFilterAction" styleClass="button" />
+        </HBox>
+        <TableView fx:id="tableView" styleClass="table-view">
+          <columns>
+            <TableColumn fx:id="itemColumn" text="Item" />
+            <TableColumn fx:id="statusColumn" text="Status" />
+          </columns>
+        </TableView>
+      </VBox>
+    </Tab>
+
+    <!-- Tab for analytics -->
+    <Tab text="Analytics">
+      <VBox spacing="10" alignment="CENTER">
+        <Label text="Booking Statistics" styleClass="main-title" />
+        <PieChart fx:id="bookingChart" />
+      </VBox>
+    </Tab>
+
+    <!-- Tab for loyalty points -->
+    <Tab text="Loyalty Points">
+      <VBox spacing="10" alignment="CENTER">
+        <Label text="Loyalty Progress:" styleClass="main-title" />
+        <ProgressBar fx:id="progressBar" prefWidth="300" />
+      </VBox>
+    </Tab>
+
+    <!-- Tab for settings -->
+    <Tab text="Settings">
+      <VBox spacing="10" alignment="CENTER">
+        <HBox spacing="10" alignment="CENTER">
+          <ComboBox fx:id="languageComboBox" promptText="Select Language" styleClass="combo-box" />
+          <Button fx:id="themeToggleButton" text="Toggle Theme" onAction="#handleThemeToggle" styleClass="button" />
+        </HBox>
+        <Button fx:id="loginButton" text="Login" onAction="#handleLoginAction" styleClass="button" />
+      </VBox>
+    </Tab>
+  </tabs>
+</TabPane>

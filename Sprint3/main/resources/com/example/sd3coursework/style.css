@@ -1,0 +1,133 @@
+/* Light Theme Styles */
+
+/* Root Background */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #f0f4c3, #dcedc8); /* Light green gradient */
+    -fx-padding: 20px;
+}
+
+/* Main Title */
+.main-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E7D32; /* Dark green */
+    -fx-padding: 10px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C); /* Green gradient */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #43A047); /* Lighter green */
+    -fx-cursor: hand;
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+/* TableColumn Header */
+.table-view .column-header {
+    -fx-background-color: #E8F5E9; /* Light green header */
+    -fx-text-fill: #2E7D32; /* Dark green text */
+    -fx-font-weight: bold;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #2E7D32; /* Dark green text for labels */
+    -fx-font-size: 16px;
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #66BB6A; /* Green progress indicator */
+    -fx-control-inner-background: #E8F5E9; /* Light green background for progress bar */
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 5px;
+}
+
+/* PieChart */
+.pie-chart {
+    -fx-pie-label-visible: true; /* Ensure labels are visible */
+    -fx-background-color: transparent; /* Transparent background for chart */
+}
+
+/* TabPane Styling */
+.tab-pane {
+    -fx-background-color: white;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 5px;
+}
+
+.tab {
+    -fx-background-color: white;
+    -fx-text-fill: #2E7D32; /* Dark green */
+    -fx-font-weight: bold;
+}
+
+.tab:selected {
+    -fx-background-color: #E8F5E9; /* Light green for selected tab */
+}
+
+/* Hover Effects for Tabs */
+.tab:hover {
+    -fx-background-color: #E8F5E9;
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 5px;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 5px;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+/* Tooltips */
+.tooltip {
+    -fx-background-color: #E8F5E9;
+    -fx-text-fill: #2E7D32; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 5px;
+}
